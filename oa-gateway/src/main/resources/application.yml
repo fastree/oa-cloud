@@ -1,0 +1,36 @@
+server:
+  port: 7000
+
+spring:
+  profiles:
+    active: dev
+  cloud:
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: system_route
+          uri: lb://oa-service-system
+          predicates:
+            - Path=/system/**
+        - id: httpbin_route
+          uri: https://httpbin.org
+          predicates:
+            - Path=/httpbin/**
+          filters:
+            - RewritePath=/httpbin/(?<segment>.*), /$\{segment}
+
+    sentinel:
+      transport:
+        dashboard: 192.168.188.128:9000
+      filter:
+        enabled: false
+
+  zipkin:
+    base-url: http://192.168.188.128:9411
+
+
+

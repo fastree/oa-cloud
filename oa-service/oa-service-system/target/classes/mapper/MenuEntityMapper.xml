@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fastree.oa.service.system.mapper.MenuMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fastree.oa.service.system.entity.MenuEntity">
+        <id column="menu_id" property="menuId" />
+        <result column="menu_name" property="menuName" />
+        <result column="menu_type" property="menuType" />
+        <result column="menu_sort" property="menuSort" />
+        <result column="parent_id" property="parentId" />
+        <result column="path" property="path" />
+        <result column="component" property="component" />
+        <result column="redirect" property="redirect" />
+        <result column="hidden" property="hidden" />
+        <result column="always_show" property="alwaysShow" />
+        <result column="permission" property="permission" />
+        <result column="meta_roles" property="metaRoles" />
+        <result column="meta_title" property="metaTitle" />
+        <result column="meta_icon" property="metaIcon" />
+        <result column="meta_no_cache" property="metaNoCache" />
+        <result column="meta_bread_crumb" property="metaBreadCrumb" />
+        <result column="meta_affix" property="metaAffix" />
+        <result column="meta_active_menu" property="metaActiveMenu" />
+        <result column="created_by" property="createdBy" />
+        <result column="created_time" property="createdTime" />
+        <result column="modified_by" property="modifiedBy" />
+        <result column="modified_time" property="modifiedTime" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        menu_id, menu_name, menu_type, menu_sort, parent_id, path, component, redirect, hidden, always_show, permission, meta_roles, meta_title, meta_icon, meta_no_cache, meta_bread_crumb, meta_affix, meta_active_menu, created_by, created_time, modified_by, modified_time, remark
+    </sql>
+
+</mapper>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fastree.oa.service.system.mapper.UserInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fastree.oa.service.system.entity.UserInfoEntity">
+        <id column="user_id" property="userId" />
+        <result column="user_sort" property="userSort" />
+        <result column="email_addr" property="emailAddr" />
+        <result column="phone_no" property="phoneNo" />
+        <result column="ext_no" property="extNo" />
+        <result column="deleted" property="deleted" />
+        <result column="report_id" property="reportId" />
+        <result column="dept_id" property="deptId" />
+        <result column="post_id" property="postId" />
+        <result column="entry_date" property="entryDate" />
+        <result column="avatar" property="avatar" />
+        <result column="created_by" property="createdBy" />
+        <result column="created_time" property="createdTime" />
+        <result column="modified_by" property="modifiedBy" />
+        <result column="modified_time" property="modifiedTime" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        user_id, user_sort, email_addr, phone_no, ext_no, deleted, report_id, dept_id, post_id, entry_date, avatar, created_by, created_time, modified_by, modified_time, remark
+    </sql>
+
+</mapper>

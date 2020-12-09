@@ -1,0 +1,95 @@
+{
+  "groups": [
+    {
+      "name": "auth.code",
+      "type": "com.fastree.oa.common.auth.code.CodeProperties",
+      "sourceType": "com.fastree.oa.common.auth.code.CodeProperties"
+    },
+    {
+      "name": "auth.jwt",
+      "type": "com.fastree.oa.common.auth.jwt.JwtProperties",
+      "sourceType": "com.fastree.oa.common.auth.jwt.JwtProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "auth.code.code-prefix",
+      "type": "java.lang.String",
+      "description": "验证码的前缀",
+      "sourceType": "com.fastree.oa.common.auth.code.CodeProperties",
+      "defaultValue": "captcha-key-"
+    },
+    {
+      "name": "auth.code.code-type",
+      "type": "com.fastree.oa.common.auth.code.CodeEnum",
+      "description": "验证码配置",
+      "sourceType": "com.fastree.oa.common.auth.code.CodeProperties"
+    },
+    {
+      "name": "auth.code.expires",
+      "type": "java.lang.Long",
+      "description": "验证码有效期 分钟",
+      "sourceType": "com.fastree.oa.common.auth.code.CodeProperties",
+      "defaultValue": 2
+    },
+    {
+      "name": "auth.code.font-name",
+      "type": "java.lang.String",
+      "description": "验证码字体",
+      "sourceType": "com.fastree.oa.common.auth.code.CodeProperties"
+    },
+    {
+      "name": "auth.code.font-size",
+      "type": "java.lang.Integer",
+      "description": "字体大小",
+      "sourceType": "com.fastree.oa.common.auth.code.CodeProperties",
+      "defaultValue": 25
+    },
+    {
+      "name": "auth.code.height",
+      "type": "java.lang.Integer",
+      "description": "验证码高度",
+      "sourceType": "com.fastree.oa.common.auth.code.CodeProperties",
+      "defaultValue": 36
+    },
+    {
+      "name": "auth.code.length",
+      "type": "java.lang.Integer",
+      "description": "验证码内容长度",
+      "sourceType": "com.fastree.oa.common.auth.code.CodeProperties",
+      "defaultValue": 2
+    },
+    {
+      "name": "auth.code.width",
+      "type": "java.lang.Integer",
+      "description": "验证码宽度",
+      "sourceType": "com.fastree.oa.common.auth.code.CodeProperties",
+      "defaultValue": 111
+    },
+    {
+      "name": "auth.jwt.authorities-key",
+      "type": "java.lang.String",
+      "sourceType": "com.fastree.oa.common.auth.jwt.JwtProperties",
+      "defaultValue": "authorities"
+    },
+    {
+      "name": "auth.jwt.base64-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.fastree.oa.common.auth.jwt.JwtProperties",
+      "defaultValue": "ZmQ0ZGI5NjQ0MDQwY2I4MjMxY2Y3ZmI3MjdhN2ZmMjNhODViOTg1ZGE0NTBjMGM4NDA5NzYxMjdjOWMwYWRmZTBlZjlhNGY3ZTg4Y2U3YTE1ODVkZDU5Y2Y3OGYwZWE1NzUzNWQ2YjFjZDc0NGMxZWU2MmQ3MjY1NzJmNTE0MzI="
+    },
+    {
+      "name": "auth.jwt.remember-me-expires",
+      "type": "java.lang.Long",
+      "sourceType": "com.fastree.oa.common.auth.jwt.JwtProperties",
+      "defaultValue": 108000000
+    },
+    {
+      "name": "auth.jwt.token-expires",
+      "type": "java.lang.Long",
+      "sourceType": "com.fastree.oa.common.auth.jwt.JwtProperties",
+      "defaultValue": 86400000
+    }
+  ],
+  "hints": []
+}

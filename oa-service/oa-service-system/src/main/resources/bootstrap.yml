@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: oa-service-system
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.188.128:8848
+        namespace: 11d3dec1-9300-4536-83ce-743764d4ce67
+      config:
+        server-addr: 192.168.188.128:8848
+        namespace: 11d3dec1-9300-4536-83ce-743764d4ce67
+        file-extension: yaml
