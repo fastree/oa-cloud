@@ -15,7 +15,7 @@ public class OvertimeReadData {
     @ExcelProperty("加班日期")
     private Date date;
     @ExcelProperty("加班时间")
-    private Integer hours;
+    private Double hours;
     @ExcelProperty("加班类型")
     private String types;
 }

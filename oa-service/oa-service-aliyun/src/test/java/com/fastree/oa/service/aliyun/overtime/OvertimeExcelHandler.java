@@ -16,7 +16,7 @@ public class OvertimeExcelHandler {
 
     public static void main(String[] args) {
         // 解析导出的加班清单
-        File file = new File("C:\\Users\\Administrator\\Desktop\\AAA\\加班清单2020-11.xlsx");
+        File file = new File("C:\\Users\\Administrator\\Desktop\\AAA\\加班清单2020-12.xlsx");
         OvertimeReadListener overtimeReaderListener = new OvertimeReadListener();
         EasyExcel.read(file, OvertimeReadData.class, overtimeReaderListener).sheet().doRead();
 
@@ -95,7 +95,7 @@ public class OvertimeExcelHandler {
 
     }
 
-    private static void populate28DayOvertime(OvertimeWrite28Data overtimeData, Integer day, Integer hour) {
+    private static void populate28DayOvertime(OvertimeWrite28Data overtimeData, Integer day, Double hour) {
         if (day == 1) {
             overtimeData.setFirstDay(hour);
         } else if (day == 2) {
@@ -155,7 +155,7 @@ public class OvertimeExcelHandler {
         }
     }
 
-    private static void populate29DayOvertime(OvertimeWrite29Data overtimeData, Integer day, Integer hour) {
+    private static void populate29DayOvertime(OvertimeWrite29Data overtimeData, Integer day, Double hour) {
         if (day == 1) {
             overtimeData.setFirstDay(hour);
         } else if (day == 2) {
@@ -217,7 +217,7 @@ public class OvertimeExcelHandler {
         }
     }
 
-    private static void populate30DayOvertime(OvertimeWrite30Data overtimeData, Integer day, Integer hour) {
+    private static void populate30DayOvertime(OvertimeWrite30Data overtimeData, Integer day, Double hour) {
         if (day == 1) {
             overtimeData.setFirstDay(hour);
         } else if (day == 2) {
@@ -281,7 +281,7 @@ public class OvertimeExcelHandler {
         }
     }
 
-    private static void populate31DayOvertime(OvertimeWrite31Data overtimeData, Integer day, Integer hour) {
+    private static void populate31DayOvertime(OvertimeWrite31Data overtimeData, Integer day, Double hour) {
         if (day == 1) {
             overtimeData.setFirstDay(hour);
         } else if (day == 2) {
